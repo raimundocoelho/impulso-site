@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Impulso Gestão — a plataforma que protege seu município de riscos fiscais e impulsiona a gestão financeira da saúde pública municipal.">
+<meta name="theme-color" content="#06446C">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Impulso Gestão — Gestão Financeira da Saúde Pública Municipal">
+<meta property="og:description" content="Nunca mais perca prazos legais. Saiba para onde vai cada real. Tome decisões com base em dados reais.">
+<meta property="og:image" content="https://impulsogestao.com/bg-hero.webp">
+<meta property="og:url" content="https://impulsogestao.com">
+
+<title>Impulso Gestão — Gestão Financeira da Saúde Pública Municipal</title>
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='3' y='22' width='55' height='22' rx='11' fill='%2369D4F5'/%3E%3Crect x='19' y='6' width='22' height='55' rx='11' fill='%2369D4F5'/%3E%3Crect x='42' y='56' width='55' height='22' rx='11' fill='%2306446C'/%3E%3Crect x='58' y='40' width='22' height='55' rx='11' fill='%2306446C'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+<link rel="stylesheet" href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600,700">
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+
+<style>
+  html { font-family: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif; }
+  body { font-family: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif; }
+  ::selection { background: #69D4F5; color: #06446C; }
+
+  /* FAQ native accordion */
+  details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; }
+  details .faq-toggle { transition: transform .2s ease; }
+  details[open] .faq-toggle { transform: rotate(45deg); }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  }
+</style>
+</head>
+
+<body class="min-h-screen bg-white antialiased dark:bg-zinc-950" style="font-family: 'Instrument Sans', sans-serif">
+
+<!-- ============ FLOATING HEADER ============ -->
+<header class="fixed top-0 z-50 w-full px-3 pt-3 sm:px-4 sm:pt-4">
+  <nav class="mx-auto flex max-w-5xl items-center justify-between rounded-2xl border border-white/15 bg-white/80 px-4 py-2.5 shadow-lg shadow-black/5 backdrop-blur-xl dark:border-white/10 dark:bg-zinc-900/80 sm:px-6 sm:py-3">
+
+    <a href="/" class="flex items-center gap-2 sm:gap-3" aria-label="Impulso Gestão">
+      <span class="size-8 sm:size-9 flex items-center justify-center">
+        <svg viewBox="0 0 100 100" class="w-full h-full">
+          <rect x="3" y="22" width="55" height="22" rx="11" fill="#69D4F5"/>
+          <rect x="19" y="6" width="22" height="55" rx="11" fill="#69D4F5"/>
+          <rect x="42" y="56" width="55" height="22" rx="11" fill="#06446C"/>
+          <rect x="58" y="40" width="22" height="55" rx="11" fill="#06446C"/>
+        </svg>
+      </span>
+      <span class="text-base font-bold text-zinc-900 dark:text-white sm:text-lg">Impulso <span class="text-[#69D4F5]">Gestão</span></span>
+    </a>
+
+    <div class="hidden items-center gap-6 md:flex">
+      <a href="#vantagens" class="text-sm font-medium text-zinc-600 transition hover:text-[#2869AF] dark:text-zinc-400 dark:hover:text-[#69D4F5]">Vantagens</a>
+      <a href="#resultados" class="text-sm font-medium text-zinc-600 transition hover:text-[#2869AF] dark:text-zinc-400 dark:hover:text-[#69D4F5]">Resultados</a>
+      <a href="#contato" class="text-sm font-medium text-zinc-600 transition hover:text-[#2869AF] dark:text-zinc-400 dark:hover:text-[#69D4F5]">Contato</a>
+    </div>
+
+    <div class="flex items-center gap-2 sm:gap-3">
+      <a href="https://app.impulsogestao.com" class="rounded-lg px-3 py-2 text-xs font-medium text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white sm:text-sm">Entrar</a>
+      <a href="#contato" class="hidden rounded-lg bg-[#2869AF] px-4 py-2 text-xs font-semibold text-white shadow-sm transition hover:bg-[#06446C] sm:inline-block sm:px-5 sm:text-sm">Fale Conosco</a>
+    </div>
+
+  </nav>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="relative overflow-hidden pt-28 pb-16 sm:pt-36 sm:pb-20 lg:pt-48 lg:pb-32">
+  <img src="bg-hero.webp" alt="" class="absolute inset-0 size-full object-cover" loading="eager">
+  <div class="absolute inset-0 bg-gradient-to-br from-[#06446C]/92 via-zinc-950/88 to-[#2869AF]/85"></div>
+
+  <div class="relative mx-auto max-w-5xl px-5 text-center sm:px-6">
+
+    <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-[#69D4F5]/30 bg-[#69D4F5]/10 px-4 py-1.5 text-xs font-medium text-[#69D4F5] backdrop-blur-sm">
+      <span class="size-1.5 animate-pulse rounded-full bg-[#69D4F5]"></span>
+      Usado por Secretarias de Saúde em todo o Brasil
+    </div>
+
+    <h1 class="mx-auto max-w-3xl text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-6xl">
+      Seu município
+      <span class="bg-gradient-to-r from-[#69D4F5] to-[#2869AF] bg-clip-text text-transparent">protegido</span>
+      de riscos fiscais
+    </h1>
+
+    <p class="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-zinc-300 sm:mt-6 sm:text-lg">
+      Gestores de saúde que usam o Impulso <strong class="font-semibold text-white">nunca mais perdem prazos legais</strong>, sabem exatamente para onde vai cada real e tomam decisões com base em dados reais — não em achismo.
+    </p>
+
+    <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:mt-10 sm:flex-row sm:gap-4">
+      <a href="#contato" class="w-full rounded-xl bg-[#2869AF] px-8 py-3.5 text-center text-sm font-semibold text-white shadow-lg shadow-[#2869AF]/30 transition hover:bg-[#06446C] sm:w-auto sm:text-base">
+        Solicitar Demonstração
+      </a>
+      <a href="#vantagens" class="w-full rounded-xl border border-zinc-700 bg-zinc-800/80 px-8 py-3.5 text-center text-sm font-semibold text-zinc-300 backdrop-blur-sm transition hover:bg-zinc-700 sm:w-auto sm:text-base">
+        Conhecer Vantagens
+      </a>
+    </div>
+
+    <p class="mt-4 text-xs text-zinc-400">Demonstração personalizada para seu município. Sem compromisso.</p>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="border-y border-zinc-800/60 bg-zinc-900/40">
+  <div class="mx-auto max-w-5xl px-5 py-12 sm:px-6 sm:py-16">
+    <div class="grid grid-cols-2 gap-y-8 gap-x-4 text-center md:grid-cols-4">
+      <div>
+        <div class="text-3xl font-bold text-[#69D4F5] sm:text-4xl">100%</div>
+        <div class="mt-1.5 text-xs font-medium text-zinc-500 sm:text-sm">Digital e na nuvem</div>
+      </div>
+      <div>
+        <div class="text-3xl font-bold text-[#69D4F5] sm:text-4xl">Zero</div>
+        <div class="mt-1.5 text-xs font-medium text-zinc-500 sm:text-sm">Riscos de improbidade</div>
+      </div>
+      <div>
+        <div class="text-3xl font-bold text-[#69D4F5] sm:text-4xl">24h</div>
+        <div class="mt-1.5 text-xs font-medium text-zinc-500 sm:text-sm">Dados atualizados</div>
+      </div>
+      <div>
+        <div class="text-3xl font-bold text-[#69D4F5] sm:text-4xl">IA</div>
+        <div class="mt-1.5 text-xs font-medium text-zinc-500 sm:text-sm">Integrada ao SUS</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VANTAGENS ============ -->
+<section id="vantagens" class="py-20 sm:py-28">
+  <div class="mx-auto max-w-6xl px-5 sm:px-6">
+
+    <div class="text-center">
+      <div class="mb-3 text-xs font-semibold uppercase tracking-[0.15em] text-[#69D4F5]">Vantagens</div>
+      <h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-4xl">Por que gestores escolhem o Impulso?</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-zinc-400">Cada vantagem foi pensada para resolver um problema real de quem gere a saúde pública no dia a dia.</p>
+    </div>
+
+    <div class="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
+
+      <article class="group rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6 transition hover:border-[#2869AF]/50 hover:bg-zinc-900">
+        <div class="mb-4 flex size-11 items-center justify-center rounded-xl bg-[#69D4F5]/10 text-[#69D4F5]">
+          <iconify-icon icon="solar:alarm-bold" width="22"></iconify-icon>
+        </div>
+        <h3 class="text-lg font-semibold text-white">Nunca mais perca um prazo</h3>
+        <p class="mt-2 text-sm leading-relaxed text-zinc-400">O sistema monitora todas as obrigações legais do seu município e avisa antes do vencimento. Acabou o risco de multa por esquecimento.</p>
+      </article>
+
+      <article class="group rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6 transition hover:border-[#2869AF]/50 hover:bg-zinc-900">
+        <div class="mb-4 flex size-11 items-center justify-center rounded-xl bg-[#2869AF]/15 text-[#2869AF]">
+          <iconify-icon icon="solar:chart-square-bold" width="22"></iconify-icon>
+        </div>
+        <h3 class="text-lg font-semibold text-white">Saiba para onde vai cada real</h3>
+        <p class="mt-2 text-sm leading-relaxed text-zinc-400">Acompanhe em tempo real todas as transferências federais e estaduais. Transparência total para prestação de contas.</p>
+      </article>
+
+      <article class="group rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6 transition hover:border-[#2869AF]/50 hover:bg-zinc-900">
+        <div class="mb-4 flex size-11 items-center justify-center rounded-xl bg-[#69D4F5]/10 text-[#69D4F5]">
+          <iconify-icon icon="solar:shield-check-bold" width="22"></iconify-icon>
+        </div>
+        <h3 class="text-lg font-semibold text-white">Proteção contra improbidade</h3>
+        <p class="mt-2 text-sm leading-relaxed text-zinc-400">Cruzamento automático de dados identifica inconsistências antes que virem problemas com o Tribunal de Contas.</p>
+      </article>
+
+      <article class="group rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6 transition hover:border-[#2869AF]/50 hover:bg-zinc-900">
+        <div class="mb-4 flex size-11 items-center justify-center rounded-xl bg-[#DAE4EB]/10 text-[#DAE4EB]">
+          <iconify-icon icon="hugeicons:artificial-intelligence-05" width="22"></iconify-icon>
+        </div>
+        <h3 class="text-lg font-semibold text-white">Decisões baseadas em dados</h3>
+        <p class="mt-2 text-sm leading-relaxed text-zinc-400">Inteligência artificial especializada em saúde pública analisa seus dados e sugere ações concretas.</p>
+      </article>
+
+      <article class="group rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6 transition hover:border-[#2869AF]/50 hover:bg-zinc-900">
+        <div class="mb-4 flex size-11 items-center justify-center rounded-xl bg-[#2869AF]/15 text-[#2869AF]">
+          <iconify-icon icon="solar:document-medicine-bold" width="22"></iconify-icon>
+        </div>
+        <h3 class="text-lg font-semibold text-white">Relatórios em minutos, não semanas</h3>
+        <p class="mt-2 text-sm leading-relaxed text-zinc-400">Gere documentos obrigatórios automaticamente. O que levava dias agora sai com poucos cliques.</p>
+      </article>
+
+      <article class="group rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6 transition hover:border-[#2869AF]/50 hover:bg-zinc-900">
+        <div class="mb-4 flex size-11 items-center justify-center rounded-xl bg-[#69D4F5]/10 text-[#69D4F5]">
+          <iconify-icon icon="solar:widget-5-bold" width="22"></iconify-icon>
+        </div>
+        <h3 class="text-lg font-semibold text-white">Tudo em um só lugar</h3>
+        <p class="mt-2 text-sm leading-relaxed text-zinc-400">Chega de planilhas, papéis e sistemas diferentes. Uma única plataforma para toda a gestão financeira da saúde.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESULTADOS ============ -->
+<section id="resultados" class="border-y border-zinc-800/60 bg-zinc-900/30 py-20 sm:py-28">
+  <div class="mx-auto max-w-6xl px-5 sm:px-6">
+    <div class="grid gap-12 lg:grid-cols-2 lg:gap-16">
+
+      <div>
+        <div class="mb-3 text-xs font-semibold uppercase tracking-[0.15em] text-[#69D4F5]">Resultados reais</div>
+        <h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-4xl">O que muda no seu município</h2>
+        <p class="mt-4 text-zinc-400">Gestores que adotam o Impulso relatam mudanças concretas já nas primeiras semanas de uso.</p>
+
+        <ul class="mt-8 space-y-5">
+          <li class="flex gap-3">
+            <div class="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full bg-[#69D4F5]/15">
+              <iconify-icon icon="solar:check-circle-bold" class="text-[#69D4F5]" width="14"></iconify-icon>
+            </div>
+            <div>
+              <h4 class="font-semibold text-white">Contas aprovadas sem ressalvas pelo Tribunal de Contas</h4>
+              <p class="mt-1 text-sm text-zinc-400">Dados organizados e consistentes facilitam a prestação de contas e reduzem apontamentos.</p>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <div class="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full bg-[#69D4F5]/15">
+              <iconify-icon icon="solar:check-circle-bold" class="text-[#69D4F5]" width="14"></iconify-icon>
+            </div>
+            <div>
+              <h4 class="font-semibold text-white">Equipe gasta 80% menos tempo com relatórios</h4>
+              <p class="mt-1 text-sm text-zinc-400">Automação elimina trabalho manual repetitivo. Sua equipe foca no que importa.</p>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <div class="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full bg-[#69D4F5]/15">
+              <iconify-icon icon="solar:check-circle-bold" class="text-[#69D4F5]" width="14"></iconify-icon>
+            </div>
+            <div>
+              <h4 class="font-semibold text-white">Prefeito informado em tempo real</h4>
+              <p class="mt-1 text-sm text-zinc-400">Dashboard executivo mostra a situação financeira da saúde a qualquer momento, em qualquer dispositivo.</p>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <div class="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full bg-[#69D4F5]/15">
+              <iconify-icon icon="solar:check-circle-bold" class="text-[#69D4F5]" width="14"></iconify-icon>
+            </div>
+            <div>
+              <h4 class="font-semibold text-white">Recuperação de recursos parados</h4>
+              <p class="mt-1 text-sm text-zinc-400">O sistema identifica oportunidades de receita e saldos que podem ser reaproveitados.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 sm:gap-5">
+
+        <div class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+          <div class="mb-3 flex size-10 items-center justify-center rounded-lg bg-[#69D4F5]/10">
+            <iconify-icon icon="solar:check-circle-bold" class="text-[#69D4F5]" width="20"></iconify-icon>
+          </div>
+          <h3 class="text-lg font-bold text-[#69D4F5]">Compliance</h3>
+          <p class="mt-1.5 text-sm text-zinc-400">Sempre em dia com a legislação</p>
+        </div>
+
+        <div class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+          <div class="mb-3 flex size-10 items-center justify-center rounded-lg bg-[#DAE4EB]/10">
+            <iconify-icon icon="solar:eye-bold" class="text-[#DAE4EB]" width="20"></iconify-icon>
+          </div>
+          <h3 class="text-lg font-bold text-[#DAE4EB]">Transparência</h3>
+          <p class="mt-1.5 text-sm text-zinc-400">Dados auditáveis e rastreáveis</p>
+        </div>
+
+        <div class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+          <div class="mb-3 flex size-10 items-center justify-center rounded-lg bg-[#2869AF]/15">
+            <iconify-icon icon="solar:wallet-money-bold" class="text-[#2869AF]" width="20"></iconify-icon>
+          </div>
+          <h3 class="text-lg font-bold text-[#2869AF]">Economia</h3>
+          <p class="mt-1.5 text-sm text-zinc-400">Menos retrabalho, mais eficiência</p>
+        </div>
+
+        <div class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+          <div class="mb-3 flex size-10 items-center justify-center rounded-lg bg-white/5">
+            <iconify-icon icon="solar:lock-keyhole-minimalistic-bold" class="text-white" width="20"></iconify-icon>
+          </div>
+          <h3 class="text-lg font-bold text-white">Segurança</h3>
+          <p class="mt-1.5 text-sm text-zinc-400">Dados protegidos e criptografados</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="py-20 sm:py-28">
+  <div class="mx-auto max-w-3xl px-5 sm:px-6">
+
+    <div class="text-center">
+      <div class="mb-3 text-xs font-semibold uppercase tracking-[0.15em] text-[#69D4F5]">Perguntas frequentes</div>
+      <h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-4xl">As dúvidas que todo gestor tem</h2>
+    </div>
+
+    <div class="mt-12 space-y-3">
+
+      <details class="group rounded-2xl border border-zinc-800 bg-zinc-900/40 open:border-[#2869AF]/40 transition">
+        <summary class="flex items-center justify-between gap-6 p-5 sm:p-6">
+          <span class="text-base font-semibold text-white sm:text-lg">Preciso instalar algo no computador?</span>
+          <span class="faq-toggle flex size-8 shrink-0 items-center justify-center rounded-full bg-zinc-800 text-[#69D4F5]">
+            <iconify-icon icon="lucide:plus" width="16"></iconify-icon>
+          </span>
+        </summary>
+        <div class="px-5 pb-6 text-sm leading-relaxed text-zinc-400 sm:px-6">Não. O Impulso é 100% online. Funciona em qualquer navegador, no computador, tablet ou celular. Basta acessar e fazer login.</div>
+      </details>
+
+      <details class="group rounded-2xl border border-zinc-800 bg-zinc-900/40 open:border-[#2869AF]/40 transition">
+        <summary class="flex items-center justify-between gap-6 p-5 sm:p-6">
+          <span class="text-base font-semibold text-white sm:text-lg">Meus dados ficam seguros?</span>
+          <span class="faq-toggle flex size-8 shrink-0 items-center justify-center rounded-full bg-zinc-800 text-[#69D4F5]">
+            <iconify-icon icon="lucide:plus" width="16"></iconify-icon>
+          </span>
+        </summary>
+        <div class="px-5 pb-6 text-sm leading-relaxed text-zinc-400 sm:px-6">Sim. Cada município tem seu próprio banco de dados isolado, com criptografia e backups automáticos. Seus dados nunca se misturam com os de outro município.</div>
+      </details>
+
+      <details class="group rounded-2xl border border-zinc-800 bg-zinc-900/40 open:border-[#2869AF]/40 transition">
+        <summary class="flex items-center justify-between gap-6 p-5 sm:p-6">
+          <span class="text-base font-semibold text-white sm:text-lg">Quanto tempo leva para começar a usar?</span>
+          <span class="faq-toggle flex size-8 shrink-0 items-center justify-center rounded-full bg-zinc-800 text-[#69D4F5]">
+            <iconify-icon icon="lucide:plus" width="16"></iconify-icon>
+          </span>
+        </summary>
+        <div class="px-5 pb-6 text-sm leading-relaxed text-zinc-400 sm:px-6">Seu município pode estar operando no Impulso no mesmo dia da contratação. Nós cuidamos de toda a configuração inicial.</div>
+      </details>
+
+      <details class="group rounded-2xl border border-zinc-800 bg-zinc-900/40 open:border-[#2869AF]/40 transition">
+        <summary class="flex items-center justify-between gap-6 p-5 sm:p-6">
+          <span class="text-base font-semibold text-white sm:text-lg">Preciso de equipe de TI para operar?</span>
+          <span class="faq-toggle flex size-8 shrink-0 items-center justify-center rounded-full bg-zinc-800 text-[#69D4F5]">
+            <iconify-icon icon="lucide:plus" width="16"></iconify-icon>
+          </span>
+        </summary>
+        <div class="px-5 pb-6 text-sm leading-relaxed text-zinc-400 sm:px-6">Não. O sistema foi feito para gestores de saúde, não para técnicos de informática. Se você usa WhatsApp, você usa o Impulso.</div>
+      </details>
+
+      <details class="group rounded-2xl border border-zinc-800 bg-zinc-900/40 open:border-[#2869AF]/40 transition">
+        <summary class="flex items-center justify-between gap-6 p-5 sm:p-6">
+          <span class="text-base font-semibold text-white sm:text-lg">Como funciona o suporte?</span>
+          <span class="faq-toggle flex size-8 shrink-0 items-center justify-center rounded-full bg-zinc-800 text-[#69D4F5]">
+            <iconify-icon icon="lucide:plus" width="16"></iconify-icon>
+          </span>
+        </summary>
+        <div class="px-5 pb-6 text-sm leading-relaxed text-zinc-400 sm:px-6">Suporte direto por WhatsApp e e-mail com a equipe que desenvolveu o sistema. Sem robôs, sem fila, sem terceiros.</div>
+      </details>
+
+      <details class="group rounded-2xl border border-zinc-800 bg-zinc-900/40 open:border-[#2869AF]/40 transition">
+        <summary class="flex items-center justify-between gap-6 p-5 sm:p-6">
+          <span class="text-base font-semibold text-white sm:text-lg">Posso testar antes de contratar?</span>
+          <span class="faq-toggle flex size-8 shrink-0 items-center justify-center rounded-full bg-zinc-800 text-[#69D4F5]">
+            <iconify-icon icon="lucide:plus" width="16"></iconify-icon>
+          </span>
+        </summary>
+        <div class="px-5 pb-6 text-sm leading-relaxed text-zinc-400 sm:px-6">Sim. Oferecemos demonstração gratuita personalizada com os dados do seu município. Sem compromisso.</div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTATO (simple email CTA) ============ -->
+<section id="contato" class="py-20 sm:py-24">
+  <div class="mx-auto max-w-3xl px-5 text-center sm:px-6">
+    <div class="mb-3 text-xs font-semibold uppercase tracking-[0.15em] text-[#69D4F5]">Fale conosco</div>
+    <h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-4xl">Pronto para proteger seu município?</h2>
+    <p class="mx-auto mt-4 max-w-xl text-zinc-400">Agende uma demonstração gratuita. Mostramos o Impulso funcionando com dados reais do seu município.</p>
+
+    <a href="mailto:contato@impulsogestao.com" class="mt-8 inline-flex items-center gap-2 rounded-xl bg-[#2869AF] px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-[#2869AF]/30 transition hover:bg-[#06446C] sm:text-base">
+      <iconify-icon icon="solar:letter-bold" width="18"></iconify-icon>
+      Solicitar Demonstração
+    </a>
+
+    <p class="mt-6 text-sm text-zinc-500">contato@impulsogestao.com</p>
+  </div>
+</section>
+
+<!-- ============ BIG GRADIENT CTA ============ -->
+<section class="px-4 pb-20 sm:pb-24">
+  <div class="mx-auto max-w-6xl">
+    <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#06446C] via-[#2869AF] to-[#69D4F5] p-10 text-center shadow-2xl shadow-[#06446C]/40 sm:p-14 lg:p-20">
+
+      <!-- decorative watermark logo -->
+      <svg viewBox="0 0 100 100" class="pointer-events-none absolute -right-16 -bottom-16 h-[420px] w-[420px] opacity-[0.08]" aria-hidden="true">
+        <rect x="3" y="22" width="55" height="22" rx="11" fill="#ffffff"/>
+        <rect x="19" y="6" width="22" height="55" rx="11" fill="#ffffff"/>
+        <rect x="42" y="56" width="55" height="22" rx="11" fill="#ffffff"/>
+        <rect x="58" y="40" width="22" height="55" rx="11" fill="#ffffff"/>
+      </svg>
+
+      <div class="relative">
+        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">Não espere a próxima auditoria para agir</h2>
+        <p class="mx-auto mt-5 max-w-2xl text-base text-white/90 sm:text-lg">Gestores que se antecipam protegem seus municípios e suas carreiras. O Impulso é a ferramenta que faltava.</p>
+
+        <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
+          <a href="mailto:contato@impulsogestao.com" class="w-full rounded-xl bg-white px-8 py-3.5 text-center text-sm font-semibold text-[#06446C] shadow-lg transition hover:bg-zinc-100 sm:w-auto sm:text-base">
+            Solicitar Demonstração
+          </a>
+          <a href="https://app.impulsogestao.com" class="w-full rounded-xl border border-white/40 bg-white/5 px-8 py-3.5 text-center text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/15 sm:w-auto sm:text-base">
+            Já sou cliente — Entrar
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="border-t border-zinc-800/60 py-10">
+  <div class="mx-auto max-w-6xl px-5 sm:px-6">
+    <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+
+      <a href="/" class="flex items-center gap-3" aria-label="Impulso Gestão">
+        <span class="size-9 flex items-center justify-center">
+          <svg viewBox="0 0 100 100" class="w-full h-full">
+            <rect x="3" y="22" width="55" height="22" rx="11" fill="#69D4F5"/>
+            <rect x="19" y="6" width="22" height="55" rx="11" fill="#69D4F5"/>
+            <rect x="42" y="56" width="55" height="22" rx="11" fill="#06446C"/>
+            <rect x="58" y="40" width="22" height="55" rx="11" fill="#06446C"/>
+          </svg>
+        </span>
+        <span class="text-lg font-bold text-white">Impulso <span class="text-[#69D4F5]">Gestão</span></span>
+      </a>
+
+      <nav class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
+        <a href="#vantagens" class="text-zinc-400 transition hover:text-white">Vantagens</a>
+        <a href="#resultados" class="text-zinc-400 transition hover:text-white">Resultados</a>
+        <a href="#contato" class="text-zinc-400 transition hover:text-white">Contato</a>
+        <a href="https://app.impulsogestao.com" class="text-zinc-400 transition hover:text-white">Entrar</a>
+      </nav>
+
+    </div>
+
+    <div class="mt-8 border-t border-zinc-800/60 pt-6 text-center text-xs text-zinc-500 sm:text-left">
+      © 2026 Impulso Gestão — Todos os direitos reservados.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
