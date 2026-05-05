@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Modelo oficial de Prestação de Contas SES-MG. Preencha online e baixe o PDF gratuito — pronto para enviar à Secretaria Estadual de Saúde de MG.">
+<meta name="theme-color" content="#09090b">
+<meta name="color-scheme" content="dark">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Modelo SES-MG de Prestação de Contas — Download Gratuito | Impulso Gestão">
+<meta property="og:description" content="Preencha online as 5 seções obrigatórias e baixe o PDF da Prestação de Contas SES-MG. Sem custo.">
+<meta property="og:image" content="https://impulsogestao.com/bg-hero.webp">
+<meta property="og:url" content="https://impulsogestao.com/iscas/prestacao-contas.html">
+
+<title>Modelo Gratuito SES-MG — Prestação de Contas em PDF | Impulso Gestão</title>
+
+<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+<link rel="shortcut icon" href="/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="ImpulsoGestão" />
+<link rel="manifest" href="/favicon/site.webmanifest" />
+
+<link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+<link rel="stylesheet" href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600,700">
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+
+<style>
+  html { font-family: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif; background: #09090b; color-scheme: dark; }
+  body { font-family: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif; }
+  ::selection { background: #69D4F5; color: #06446C; }
+
+  .bg-grid-fade {
+    background-image:
+      linear-gradient(to right, rgba(105, 212, 245, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(105, 212, 245, 0.06) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black 30%, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black 30%, transparent 80%);
+  }
+
+  @keyframes drift-a { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(30px,-20px) scale(1.06); } }
+  @keyframes drift-b { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(-40px,25px) scale(1.08); } }
+  .anim-drift-a { animation: drift-a 14s ease-in-out infinite; }
+  .anim-drift-b { animation: drift-b 18s ease-in-out infinite; }
+
+  @keyframes text-shimmer { 0% { background-position: 0% 50%; } 100% { background-position: 200% 50%; } }
+  .text-shimmer {
+    background: linear-gradient(90deg, #69D4F5 0%, #2869AF 25%, #69D4F5 50%, #2869AF 75%, #69D4F5 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: text-shimmer 6s linear infinite;
+  }
+
+  .reveal { opacity: 0; transform: translateY(30px); transition: opacity .8s cubic-bezier(0.22,1,0.36,1), transform .8s cubic-bezier(0.22,1,0.36,1); }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+  .reveal[data-delay="1"] { transition-delay: .08s; }
+  .reveal[data-delay="2"] { transition-delay: .16s; }
+  .reveal[data-delay="3"] { transition-delay: .24s; }
+  .reveal[data-delay="4"] { transition-delay: .32s; }
+
+  .btn-primary { position: relative; overflow: hidden; isolation: isolate; }
+  .btn-primary::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent 0%, transparent 40%, rgba(255,255,255,0.35) 50%, transparent 60%, transparent 100%);
+    transform: translateX(-100%);
+    transition: transform .6s ease;
+    z-index: 0;
+  }
+  .btn-primary:hover::before { transform: translateX(100%); }
+  .btn-primary > * { position: relative; z-index: 1; }
+
+  .step-card {
+    transition: transform .3s cubic-bezier(0.22,1,0.36,1), border-color .3s ease, box-shadow .3s ease;
+  }
+  .step-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(105, 212, 245, 0.4) !important;
+    box-shadow: 0 20px 40px -20px rgba(105, 212, 245, 0.25);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    .reveal { opacity: 1; transform: none; }
+  }
+</style>
+</head>
+
+<body class="min-h-screen bg-zinc-950 text-white antialiased" style="font-family: 'Instrument Sans', sans-serif">
+
+<!-- HEADER -->
+<header class="fixed top-0 z-50 w-full px-3 pt-3 sm:px-4 sm:pt-4">
+  <nav class="mx-auto flex max-w-5xl items-center justify-between rounded-2xl border border-white/10 bg-zinc-900/75 px-4 py-2.5 shadow-lg shadow-black/20 backdrop-blur-xl sm:px-6 sm:py-3">
+    <a href="/" class="flex items-center gap-2 sm:gap-3" aria-label="Impulso Gestão">
+      <span class="size-8 sm:size-9 flex items-center justify-center">
+        <img src="/logotipo-impulso.png?v=3" alt="Impulso Gestão" class="w-full h-full object-contain">
+      </span>
+      <span class="text-base font-bold text-white sm:text-lg">Impulso <span class="text-[#69D4F5]">Gestão</span></span>
+    </a>
+    <a href="https://app.impulsogestao.com/lead/cadastro?origem=prest-contas" class="btn-primary rounded-lg bg-[#69D4F5] px-4 py-2 text-xs font-semibold text-[#06446C] shadow-md shadow-[#69D4F5]/20 transition hover:bg-white sm:px-5 sm:text-sm">
+      Acessar gratuitamente
+    </a>
+  </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="relative overflow-hidden pt-28 pb-16 sm:pt-36 sm:pb-20 lg:pt-40">
+  <div class="absolute inset-0 bg-gradient-to-br from-[#06446C]/40 via-zinc-950 to-zinc-950"></div>
+  <div class="pointer-events-none absolute -left-32 top-32 size-[520px] rounded-full bg-[#69D4F5]/15 blur-3xl anim-drift-a"></div>
+  <div class="pointer-events-none absolute -right-32 bottom-0 size-[480px] rounded-full bg-[#2869AF]/20 blur-3xl anim-drift-b"></div>
+
+  <div class="relative mx-auto max-w-4xl px-5 text-center sm:px-6">
+
+    <div class="reveal mb-6 inline-flex items-center gap-2 rounded-full border border-[#69D4F5]/30 bg-[#69D4F5]/10 px-4 py-1.5 text-xs font-medium text-[#69D4F5] backdrop-blur-sm">
+      <iconify-icon icon="solar:gift-bold" width="14"></iconify-icon>
+      Material gratuito · Modelo oficial SES-MG
+    </div>
+
+    <h1 class="reveal mx-auto max-w-3xl text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl" data-delay="1">
+      Modelo de <span class="text-shimmer">Prestação de Contas</span> SES-MG, em PDF, em 5 minutos
+    </h1>
+
+    <p class="reveal mx-auto mt-6 max-w-2xl text-base leading-relaxed text-zinc-300 sm:text-lg" data-delay="2">
+      Preencha online as <strong class="font-semibold text-white">5 seções obrigatórias</strong> e baixe o PDF pronto para enviar à Secretaria Estadual de Saúde de Minas Gerais. Sem instalar nada, sem cadastro pago.
+    </p>
+
+    <div class="reveal mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4" data-delay="3">
+      <a href="https://app.impulsogestao.com/lead/cadastro?origem=prest-contas" class="btn-primary w-full rounded-xl bg-[#69D4F5] px-8 py-3.5 text-center text-sm font-semibold text-[#06446C] shadow-xl shadow-[#69D4F5]/30 transition hover:bg-white hover:shadow-[#69D4F5]/50 sm:w-auto sm:text-base">
+        Quero o modelo gratuito
+      </a>
+      <a href="#como-funciona" class="w-full rounded-xl border border-white/20 bg-white/5 px-8 py-3.5 text-center text-sm font-semibold text-white backdrop-blur-sm transition hover:border-white/40 hover:bg-white/10 sm:w-auto sm:text-base">
+        Ver como funciona
+      </a>
+    </div>
+
+    <p class="reveal mt-5 text-xs text-zinc-400" data-delay="4">100% online · Sem custo · Compatível com qualquer município</p>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section id="como-funciona" class="relative overflow-hidden border-y border-zinc-800/80 bg-zinc-900/40 py-20 sm:py-24">
+  <div class="pointer-events-none absolute inset-0 bg-grid-fade"></div>
+
+  <div class="relative mx-auto max-w-6xl px-5 sm:px-6">
+
+    <div class="text-center">
+      <div class="reveal mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#69D4F5]">✦ Como funciona</div>
+      <h2 class="reveal text-3xl font-bold tracking-tight text-white sm:text-4xl" data-delay="1">3 passos para o seu PDF</h2>
+    </div>
+
+    <div class="mt-14 grid gap-5 md:grid-cols-3">
+
+      <div class="reveal step-card rounded-2xl border border-zinc-800 bg-zinc-900/60 p-7" data-delay="1">
+        <div class="mb-4 flex size-11 items-center justify-center rounded-xl bg-[#69D4F5]/15 text-[#69D4F5] ring-1 ring-[#69D4F5]/30 font-bold">1</div>
+        <h3 class="text-lg font-semibold text-white">Cadastro relâmpago</h3>
+        <p class="mt-2 text-sm leading-relaxed text-zinc-400">Nome, WhatsApp, e-mail e sua prefeitura. Menos de 1 minuto. Sem senha.</p>
+      </div>
+
+      <div class="reveal step-card rounded-2xl border border-zinc-800 bg-zinc-900/60 p-7" data-delay="2">
+        <div class="mb-4 flex size-11 items-center justify-center rounded-xl bg-[#69D4F5]/15 text-[#69D4F5] ring-1 ring-[#69D4F5]/30 font-bold">2</div>
+        <h3 class="text-lg font-semibold text-white">Preencha as 5 seções</h3>
+        <p class="mt-2 text-sm leading-relaxed text-zinc-400">Identificação, resolução, conciliação bancária, pagamentos e considerações. Saldo final calculado automaticamente.</p>
+      </div>
+
+      <div class="reveal step-card rounded-2xl border border-zinc-800 bg-zinc-900/60 p-7" data-delay="3">
+        <div class="mb-4 flex size-11 items-center justify-center rounded-xl bg-[#69D4F5]/15 text-[#69D4F5] ring-1 ring-[#69D4F5]/30 font-bold">3</div>
+        <h3 class="text-lg font-semibold text-white">Baixe o PDF</h3>
+        <p class="mt-2 text-sm leading-relaxed text-zinc-400">Documento pronto para impressão e envio à SES-MG, no formato aceito pela secretaria.</p>
+      </div>
+
+    </div>
+
+    <div class="reveal mt-12 text-center" data-delay="4">
+      <a href="https://app.impulsogestao.com/lead/cadastro?origem=prest-contas" class="btn-primary inline-flex items-center gap-2 rounded-xl bg-[#69D4F5] px-8 py-3.5 text-sm font-semibold text-[#06446C] shadow-xl shadow-[#69D4F5]/30 transition hover:bg-white sm:text-base">
+        <iconify-icon icon="solar:arrow-right-bold" width="16"></iconify-icon>
+        Começar agora
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- O QUE TEM -->
+<section class="relative overflow-hidden py-20 sm:py-24">
+  <div class="pointer-events-none absolute -left-32 top-0 size-[400px] rounded-full bg-[#2869AF]/15 blur-3xl anim-drift-a"></div>
+
+  <div class="relative mx-auto max-w-5xl px-5 sm:px-6">
+    <div class="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+
+      <div>
+        <div class="reveal mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#69D4F5]">✦ O que está incluído</div>
+        <h2 class="reveal text-3xl font-bold tracking-tight text-white sm:text-4xl" data-delay="1">Modelo no padrão exigido pela <span class="text-shimmer">SES-MG</span></h2>
+        <p class="reveal mt-4 text-zinc-400" data-delay="2">As 5 seções obrigatórias estruturadas para evitar glosas e devoluções na auditoria estadual.</p>
+
+        <ul class="mt-8 space-y-4">
+          <li class="reveal flex gap-3" data-delay="1">
+            <iconify-icon icon="solar:check-circle-bold" class="text-[#69D4F5] mt-0.5 shrink-0" width="20"></iconify-icon>
+            <div>
+              <h4 class="font-semibold text-white text-sm">Identificação do beneficiário</h4>
+              <p class="text-sm text-zinc-400">CNPJ, gestor e período de referência.</p>
+            </div>
+          </li>
+          <li class="reveal flex gap-3" data-delay="2">
+            <iconify-icon icon="solar:check-circle-bold" class="text-[#69D4F5] mt-0.5 shrink-0" width="20"></iconify-icon>
+            <div>
+              <h4 class="font-semibold text-white text-sm">Resolução e origem do recurso</h4>
+              <p class="text-sm text-zinc-400">Federal ou estadual, com número/ano da resolução de referência.</p>
+            </div>
+          </li>
+          <li class="reveal flex gap-3" data-delay="3">
+            <iconify-icon icon="solar:check-circle-bold" class="text-[#69D4F5] mt-0.5 shrink-0" width="20"></iconify-icon>
+            <div>
+              <h4 class="font-semibold text-white text-sm">Conciliação bancária com cálculo automático</h4>
+              <p class="text-sm text-zinc-400">Saldo inicial, recebimentos, rendimentos e saldo final calculado em tempo real.</p>
+            </div>
+          </li>
+          <li class="reveal flex gap-3" data-delay="4">
+            <iconify-icon icon="solar:check-circle-bold" class="text-[#69D4F5] mt-0.5 shrink-0" width="20"></iconify-icon>
+            <div>
+              <h4 class="font-semibold text-white text-sm">Relação de pagamentos detalhada</h4>
+              <p class="text-sm text-zinc-400">Empenho, espécie, doc fiscal, data, objeto e valor — quantos pagamentos forem necessários.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="reveal" data-delay="2">
+        <div class="rounded-2xl border border-[#69D4F5]/20 bg-gradient-to-br from-[#06446C]/30 via-zinc-900 to-zinc-900 p-8 shadow-2xl shadow-[#06446C]/20">
+          <div class="flex items-center justify-between mb-5">
+            <div class="flex items-center gap-2 text-xs font-semibold text-[#69D4F5] uppercase tracking-wider">
+              <iconify-icon icon="solar:file-text-bold" width="16"></iconify-icon>
+              Pré-visualização
+            </div>
+            <span class="text-[10px] text-zinc-500 uppercase tracking-wider">PDF · A4</span>
+          </div>
+
+          <div class="bg-white text-zinc-900 rounded-lg p-5 text-[10px] leading-relaxed shadow-xl">
+            <p class="text-center font-bold uppercase mb-3 text-[11px]">Prestação de Contas — SES-MG</p>
+            <div class="bg-[#06446C] text-white px-2 py-1 text-[8.5px] font-bold uppercase mb-2">I — Identificação</div>
+            <p class="mb-2"><strong>Beneficiário:</strong> Prefeitura Municipal de ___________</p>
+            <p class="mb-2"><strong>CNPJ:</strong> __________ &nbsp; <strong>Gestor:</strong> __________</p>
+            <div class="bg-[#06446C] text-white px-2 py-1 text-[8.5px] font-bold uppercase mb-2 mt-3">III — Conciliação Bancária</div>
+            <table class="w-full">
+              <tr><td>Saldo inicial</td><td class="text-right font-mono">R$ ____,__</td></tr>
+              <tr><td>Valor recebido</td><td class="text-right font-mono">R$ ____,__</td></tr>
+              <tr class="bg-[#69D4F5]/40"><td><strong>Saldo final</strong></td><td class="text-right font-mono"><strong>R$ ____,__</strong></td></tr>
+            </table>
+          </div>
+
+          <p class="mt-4 text-center text-xs text-zinc-500">Esse é o formato do PDF que você baixa</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BIG CTA -->
+<section class="px-4 pb-20 sm:pb-24">
+  <div class="mx-auto max-w-5xl">
+    <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#06446C] via-[#2869AF] to-[#69D4F5] p-10 text-center shadow-2xl shadow-[#06446C]/50 sm:p-14">
+
+      <div class="pointer-events-none absolute inset-0 opacity-40" style="background-image: radial-gradient(circle at 20% 30%, rgba(255,255,255,0.15) 0%, transparent 40%), radial-gradient(circle at 80% 70%, rgba(255,255,255,0.12) 0%, transparent 45%);"></div>
+
+      <div class="relative">
+        <h2 class="reveal text-3xl font-bold tracking-tight text-white sm:text-4xl">Pronto para gerar sua prestação de contas?</h2>
+        <p class="reveal mx-auto mt-5 max-w-2xl text-base text-white/90 sm:text-lg" data-delay="1">Em menos de 5 minutos você tem o PDF no seu computador, no padrão SES-MG.</p>
+
+        <a href="https://app.impulsogestao.com/lead/cadastro?origem=prest-contas" class="reveal btn-primary mt-10 inline-flex items-center gap-2 rounded-xl bg-white px-8 py-3.5 text-sm font-semibold text-[#06446C] shadow-xl shadow-black/20 transition hover:-translate-y-0.5 hover:bg-zinc-50 sm:text-base" data-delay="2">
+          <iconify-icon icon="solar:download-bold" width="18"></iconify-icon>
+          Acessar o modelo gratuito
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="border-t border-zinc-800/80 bg-zinc-950 py-10">
+  <div class="mx-auto max-w-6xl px-5 sm:px-6">
+    <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+      <a href="/" class="flex items-center gap-3" aria-label="Impulso Gestão">
+        <span class="size-9 flex items-center justify-center">
+          <img src="/logotipo-impulso.png?v=3" alt="Impulso Gestão" class="w-full h-full object-contain">
+        </span>
+        <span class="text-lg font-bold text-white">Impulso <span class="text-[#69D4F5]">Gestão</span></span>
+      </a>
+      <nav class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
+        <a href="/" class="text-zinc-400 transition hover:text-white">Voltar ao site</a>
+        <a href="https://app.impulsogestao.com" class="text-zinc-400 transition hover:text-white">Entrar</a>
+      </nav>
+    </div>
+    <div class="mt-8 flex flex-col items-center justify-between gap-2 border-t border-zinc-800/60 pt-6 text-xs text-zinc-500 sm:flex-row">
+      <p>© 2026 Impulso Gestão — Todos os direitos reservados.</p>
+      <p class="text-zinc-600">impulsogestao.com</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    const els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) { els.forEach(el => el.classList.add('in')); return; }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+    els.forEach(el => io.observe(el));
+  })();
+</script>
+
+</body>
+</html>
